@@ -42,11 +42,3 @@ python scripts/03_exp3_sensitivity.py
 
 Generated tables, figures, and CSV files are written to `results/` during execution. The `results/` directory is intentionally not included in this package.
 
-## Excluded
-
-The following items are intentionally excluded:
-
-- generated results, figures, LaTeX tables, and CSV outputs;
-- data downloading, crawling, or acquisition scripts;
-- Python cache folders and compiled files;
-- temporary logs.
