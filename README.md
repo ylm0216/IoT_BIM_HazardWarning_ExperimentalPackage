@@ -5,14 +5,14 @@ This package contains the experimental code and data files used for the IoT-BIM 
 ## Contents
 
 - `config.py`: shared experiment paths, random seed, plotting style, and default settings.
-- `data/raw/`: downloaded and extracted raw data files. No data crawling or downloading script is included.
+- `data/raw/`: local raw data files included with the package. No data crawling, acquisition, or downloading script is included.
 - `data/processed/`: processed data files generated during the experiment workflow and required by the scripts.
 - `scripts/`: executable experiment scripts.
 - `src/`: implementation of the proposed method, baseline methods, data processing modules, and metric utilities.
 
 ## Data Files
 
-- `data/raw/gas_sensor/gas_sensor.zip`: downloaded DS-1 gas sensor drift dataset archive.
+- `data/raw/gas_sensor/gas_sensor.zip`: local DS-1 gas sensor drift dataset archive.
 - `data/raw/gas_sensor/extracted/Dataset/batch*.dat`: extracted DS-1 batch files.
 - `data/processed/ds1_gas.npz`: processed DS-1 gas sensor data.
 - `data/processed/ds2_shm.npz`: processed DS-2 structural health monitoring data.
@@ -40,5 +40,5 @@ Run an experiment from the package root, for example:
 python scripts/03_exp3_sensitivity.py
 ```
 
-Generated tables, figures, and CSV files are written to `results/` during execution. The `results/` directory is intentionally not included in this package.
+When the scripts are executed, tables, figures, and CSV outputs are created under `results/`. This output directory is intentionally not included in the package.
 
